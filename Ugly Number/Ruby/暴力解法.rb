@@ -30,4 +30,5 @@ def get(n)
 	end
 end
 
-get(1500)
+get(400)  #0.5s
+# get(1500) 试过3min都跑不动放弃
