@@ -7,6 +7,8 @@
 //
 
 #include <stdio.h>
+#include <time.h>
+
 #define bool int
 #define true 1
 #define flase 0
@@ -15,8 +17,13 @@ int get();
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    time_t start, finish;
+    start = clock();
     get(1500);
-    //30s
+    //finished: 31.604968s 201717-09-09
+    finish = clock();
+    double times = (double)(finish - start) / CLOCKS_PER_SEC;
+    printf("finished: %fs\n", times);
     return 0;
 }
 
