@@ -35,6 +35,8 @@ Status DestroyQueue (LinkQueue *Q);
 
 Status InsertQueue (LinkQueue *Q, int i, QElemType e);
 
+Status EnQueue (LinkQueue *Q, QElemType e);
+
 long DeleteQueue (LinkQueue *Q);
 
 long HeadQueue (LinkQueue *Q);
@@ -56,6 +58,18 @@ Status DestroyQueue (LinkQueue *Q) {
         Q->front = Q->rear;
     }
     return OK;
+}
+
+Status EnQueue (LinkQueue *Q, QElemType e) {
+    QueuePtr p = (QueuePtr)malloc(sizeof(QNode));
+    if (!p) {
+        exit(OVERFLOW);
+    }
+    p->data = e;
+    p->next = NULL;
+    Q->rear->next = p;
+    Q->rear = p;
+    return  OK;
 }
 
 Status InsertQueue (LinkQueue *Q, int i, QElemType e) {

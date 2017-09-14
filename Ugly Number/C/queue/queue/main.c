@@ -17,26 +17,22 @@ void UniqueEnqueue(LinkQueue *Q, QElemType x);
 void GetNumber(int n);
 
 int main() {
+//--------------debug-------------------------------
+//      LinkQueue Q;
+//      InitQueue(&Q);
+//      for (int i = 0, j = 1; i < 1500; i ++, j++) {
+//          InsertQueue(&Q, 1, j);
+//      }
+//      QueuePtr p = Q.front;
+//      while (p != Q.rear) {
+//          p = p->next;
+//          printf("%ld ", p->data);
+//      }
+//      printf("\n");
+//-----------------------------------------------------
+ //----------------start---------------------------------
     clock_t start, finish;
     double times;
-//    LinkQueue Q;
-//    InitQueue(&Q);
-//    for (int i = 0, j = 1; i < 1500; i ++, j++) {
-//        InsertQueue(&Q, 1, j);
-//    }
-//    QueuePtr p = Q.front;
-//    while (p != Q.rear) {
-//        p = p->next;
-//        printf("%d ", p->data);
-//    }
-//    printf("\n");
-//    QueuePtr e = NULL;
-//    e = DeleteQueue(&Q, e);
-//    printf("%d\n", e->data);
-//    e = DeleteQueue(&Q, e);
-//    printf("%d\n", e->data);
-//    e = DeleteQueue(&Q, e);
-//    printf("%d\n", e->data);
     start = clock();
     GetNumber(1500);
     //finished: 0.003948s 2017-09-09
@@ -44,6 +40,7 @@ int main() {
     times = (double)(finish-start)/CLOCKS_PER_SEC;
     printf("finished: %fs\n", times);
     return 0;
+//-----------------finished--------------------------------
 }
 
 
