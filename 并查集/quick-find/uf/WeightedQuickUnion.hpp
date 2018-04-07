@@ -12,13 +12,17 @@
 #include <stdio.h>
 class WeightedQuickUnion {
 public:
+//    WeightedQuickUnion();
     WeightedQuickUnion(int);
     bool connected(int, int);
     void unionUF(int, int);
+    int Getcount();
     ~WeightedQuickUnion(){ delete [] id; delete [] size; }
 private:
-    int * id;
-    int * size;
+    int * id; //存储该结点的父结点
+    int * size; //存储该结点的权值
+    int m_num;
+    int m_count; //保存根结点的数量
     int root(int);
 };
 #endif /* WeightedQuickUnion_hpp */

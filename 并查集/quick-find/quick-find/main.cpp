@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "CSocialNetwork.hpp"
 #include "QuickFindUF.hpp"
 #include "QuickUnion.hpp"
 
@@ -21,7 +22,7 @@ int main(int argc, const char * argv[]) {
 //    return 0;
 
     
-    /*  QuickUnion */
+      /*  QuickUnion */
 //    QuickUnion U(10);
 //    int a = 2;
 //    int b = 3;
@@ -35,7 +36,25 @@ int main(int argc, const char * argv[]) {
 //        std::cout << a << " not connect to " << d << std::endl;
 //    }
 //    return 0;
-    
 
+    /* socialnetwork */
+    std::string filename = "socialnetworkinfo.txt";
+    CSocialNetwork socialNetwork(10, filename);
+    std::cout << socialNetwork.GetEarliestConnectTime() << std::endl;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

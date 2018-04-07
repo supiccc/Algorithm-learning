@@ -7,9 +7,12 @@
 //
 
 #include "WeightedQuickUnion.hpp"
+#include <cstring>
 WeightedQuickUnion::WeightedQuickUnion(int N) {
     id = new int[N];
     size = new int[N];
+    m_num = N;
+    m_count = N;
     for (int i = 0; i < N; i++) {
         id[i] = i;
         size[i] = 1; //存储权数
@@ -34,6 +37,7 @@ void WeightedQuickUnion::unionUF(int p, int q) {
     if (proot == qroot) {
         return;
     }
+    m_count -= 1;
     if (size[qroot] < size[proot]) {
         id[qroot] = proot; //小树合并到大树上
         size[proot] += size[qroot];
@@ -41,4 +45,8 @@ void WeightedQuickUnion::unionUF(int p, int q) {
         id[proot] = qroot;
         size[qroot] += size[proot];
     }
+}
+
+int WeightedQuickUnion::Getcount() {
+    return m_count;
 }
