@@ -20,7 +20,7 @@ class CSocialNetwork {
 public:
     CSocialNetwork(int, std::string &);
     std::string GetEarliestConnectTime();
-    ~CSocialNetwork() {delete m_uf;}
+    ~CSocialNetwork() {delete m_uf; m_fin.close(); }
 private:
     WeightedQuickUnion * m_uf;
     std::ifstream m_fin;

@@ -25,9 +25,7 @@ std::string CSocialNetwork::GetEarliestConnectTime() {
         timestamp = connectSplit[0];
         firstname = connectSplit[1];
         secondname = connectSplit[2];
-        if (m_uf->connected(std::atoi(firstname.c_str()), std::atoi(secondname.c_str()))){
-            
-        } else {
+        if (!m_uf->connected(std::atoi(firstname.c_str()), std::atoi(secondname.c_str()))){
             m_uf->unionUF(std::atoi(firstname.c_str()), std::atoi(secondname.c_str()));
         }
         if (m_uf->Getcount() == 1) {

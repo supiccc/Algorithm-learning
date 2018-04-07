@@ -12,6 +12,7 @@
 #include "QuickUnion.hpp"
 
 int main(int argc, const char * argv[]) {
+    
     /*    QuickFind     */
 //    QuickFindUF U(2);
 //    int a = 1;
@@ -38,9 +39,9 @@ int main(int argc, const char * argv[]) {
 //    return 0;
 
     /* socialnetwork */
-    std::string filename = "socialnetworkinfo.txt";
-    CSocialNetwork socialNetwork(10, filename);
-    std::cout << socialNetwork.GetEarliestConnectTime() << std::endl;
+//    std::string filename = "socialnetworkinfo.txt";
+//    CSocialNetwork socialNetwork(11, filename);
+//    std::cout << "整个社交网络连在一起的时间是：" << socialNetwork.GetEarliestConnectTime() << std::endl;
     
 }
 
