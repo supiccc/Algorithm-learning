@@ -15,10 +15,10 @@ public:
 //    WeightedQuickUnion();
     WeightedQuickUnion(int);
     bool connected(int, int);
-    void unionUF(int, int);
-    int Getcount();
-    ~WeightedQuickUnion(){ delete [] id; delete [] size; }
-private:
+    virtual void unionUF(int, int);
+    int Getcount(); //获取根结点数量
+    virtual ~WeightedQuickUnion(){ delete [] id; delete [] size; }
+protected:
     int * id; //存储该结点的父结点
     int * size; //存储该结点的权值
     int m_num;

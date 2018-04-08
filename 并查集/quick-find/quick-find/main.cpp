@@ -10,6 +10,7 @@
 #include "CSocialNetwork.hpp"
 #include "QuickFindUF.hpp"
 #include "QuickUnion.hpp"
+#include "FindLargestElement.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -43,6 +44,12 @@ int main(int argc, const char * argv[]) {
 //    CSocialNetwork socialNetwork(11, filename);
 //    std::cout << "整个社交网络连在一起的时间是：" << socialNetwork.GetEarliestConnectTime() << std::endl;
     
+    /* Find Largest Element */
+//    FindLargestElement U(11);
+//    U.unionUF(1, 2);
+//    U.unionUF(0, 1);
+//    U.unionUF(1, 10);
+//    std::cout << U.find(3) << std::endl;
 }
 
 
