@@ -11,6 +11,7 @@
 #include "QuickFindUF.hpp"
 #include "QuickUnion.hpp"
 #include "FindLargestElement.hpp"
+#include "CSuccessor.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -50,6 +51,12 @@ int main(int argc, const char * argv[]) {
 //    U.unionUF(0, 1);
 //    U.unionUF(1, 10);
 //    std::cout << U.find(3) << std::endl;
+    
+    
+    /* Get Successor */
+    CSuccessor successor(10);
+    successor.Remove(9);
+    std::cout << successor.GetSuccessor(9) << std::endl;
 }
 
 

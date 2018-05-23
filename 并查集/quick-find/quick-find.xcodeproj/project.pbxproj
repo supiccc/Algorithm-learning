@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C610FC52078AB9200577843 /* CSocialNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C610FC32078AB9200577843 /* CSocialNetwork.cpp */; };
 		0C610FCA2079A8CD00577843 /* FindLargestElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C610FC82079A8CD00577843 /* FindLargestElement.cpp */; };
+		0C610FD22079EF4E00577843 /* CSuccessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C610FD02079EF4E00577843 /* CSuccessor.cpp */; };
 		0CF319D6207267910099C4F4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CF319D5207267910099C4F4 /* main.cpp */; };
 		0CF319DF2072680E0099C4F4 /* QuickFindUF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CF319DD2072680E0099C4F4 /* QuickFindUF.cpp */; };
 		0CF319E2207291990099C4F4 /* QuickUnion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CF319E0207291990099C4F4 /* QuickUnion.cpp */; };
@@ -33,6 +34,8 @@
 		0C610FC620790A1000577843 /* socialnetworkinfo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = socialnetworkinfo.txt; sourceTree = "<group>"; };
 		0C610FC82079A8CD00577843 /* FindLargestElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FindLargestElement.cpp; sourceTree = "<group>"; };
 		0C610FC92079A8CD00577843 /* FindLargestElement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FindLargestElement.hpp; sourceTree = "<group>"; };
+		0C610FD02079EF4E00577843 /* CSuccessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CSuccessor.cpp; sourceTree = "<group>"; };
+		0C610FD12079EF4E00577843 /* CSuccessor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CSuccessor.hpp; sourceTree = "<group>"; };
 		0CF319D2207267910099C4F4 /* quick-find */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "quick-find"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF319D5207267910099C4F4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0CF319DD2072680E0099C4F4 /* QuickFindUF.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuickFindUF.cpp; sourceTree = "<group>"; };
@@ -72,9 +75,19 @@
 			path = findLargestElement;
 			sourceTree = "<group>";
 		};
+		0C610FCF2079EF2B00577843 /* successor */ = {
+			isa = PBXGroup;
+			children = (
+				0C610FD02079EF4E00577843 /* CSuccessor.cpp */,
+				0C610FD12079EF4E00577843 /* CSuccessor.hpp */,
+			);
+			path = successor;
+			sourceTree = "<group>";
+		};
 		0CF319C9207267910099C4F4 = {
 			isa = PBXGroup;
 			children = (
+				0C610FCF2079EF2B00577843 /* successor */,
 				0C610FC72079A89400577843 /* findLargestElement */,
 				0C610FC22078AAD900577843 /* socialNetwork */,
 				0CF319E62078AA390099C4F4 /* uf */,
@@ -173,6 +186,7 @@
 				0CF319D6207267910099C4F4 /* main.cpp in Sources */,
 				0CF319DF2072680E0099C4F4 /* QuickFindUF.cpp in Sources */,
 				0CF319E52072953F0099C4F4 /* WeightedQuickUnion.cpp in Sources */,
+				0C610FD22079EF4E00577843 /* CSuccessor.cpp in Sources */,
 				0CF319E2207291990099C4F4 /* QuickUnion.cpp in Sources */,
 				0C610FCA2079A8CD00577843 /* FindLargestElement.cpp in Sources */,
 				0C610FC52078AB9200577843 /* CSocialNetwork.cpp in Sources */,
