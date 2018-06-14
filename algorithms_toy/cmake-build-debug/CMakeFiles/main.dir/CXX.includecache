@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/suoiccc/development/Algorithm/algorithms_toy/client/main.cpp
+iostream
+-
+../sort/Merge.h
+/Users/suoiccc/development/Algorithm/algorithms_toy/sort/Merge.h
+../sort/Quick.h
+/Users/suoiccc/development/Algorithm/algorithms_toy/sort/Quick.h
+../dataStructure/SequentialSearchST.h
+/Users/suoiccc/development/Algorithm/algorithms_toy/dataStructure/SequentialSearchST.h
+../message/MessageProtocol.h
+/Users/suoiccc/development/Algorithm/algorithms_toy/message/MessageProtocol.h
+
+/Users/suoiccc/development/Algorithm/algorithms_toy/dataStructure/SequentialSearchST.h
+iostream
+-
+
+/Users/suoiccc/development/Algorithm/algorithms_toy/message/MessageProtocol.h
+iostream
+-
+bitset
+-
+vector
+-
+
+/Users/suoiccc/development/Algorithm/algorithms_toy/sort/Merge.h
+iostream
+-
+
+/Users/suoiccc/development/Algorithm/algorithms_toy/sort/Quick.h
+iostream
+-
+algorithm
+-
+
