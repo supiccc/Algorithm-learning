@@ -4,5 +4,5 @@ project(toy)
 set(CMAKE_CXX_STANDARD 11)
 
 
-add_executable(main client/main.cpp sort/Merge.h sort/Quick.h sort/Insertion.h dataStructure/SequentialSearchST.h message/MessageProtocol.h)
+add_executable(main client/main.cpp sort/Merge.h sort/Quick.h sort/Insertion.h dataStructure/SequentialSearchST.h message/MessageProtocol.h client/Zhaoshan.h)
 

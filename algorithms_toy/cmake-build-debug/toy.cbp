@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/suoiccc/development/Algorithm/algorithms_toy/client/Zhaoshan.h">
+			<Option target="main"/>
+		</Unit>
 		<Unit filename="/Users/suoiccc/development/Algorithm/algorithms_toy/client/main.cpp">
 			<Option target="main"/>
 		</Unit>

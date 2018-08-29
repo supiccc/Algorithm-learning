@@ -6,8 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/Users/suoiccc/development/Algorithm/algorithms_toy/client/Zhaoshan.h
+iostream
+-
+cmath
+-
+cstring
+-
+
 /Users/suoiccc/development/Algorithm/algorithms_toy/client/main.cpp
 iostream
+-
+cmath
 -
 ../sort/Merge.h
 /Users/suoiccc/development/Algorithm/algorithms_toy/sort/Merge.h
@@ -17,6 +27,8 @@ iostream
 /Users/suoiccc/development/Algorithm/algorithms_toy/dataStructure/SequentialSearchST.h
 ../message/MessageProtocol.h
 /Users/suoiccc/development/Algorithm/algorithms_toy/message/MessageProtocol.h
+Zhaoshan.h
+/Users/suoiccc/development/Algorithm/algorithms_toy/client/Zhaoshan.h
 
 /Users/suoiccc/development/Algorithm/algorithms_toy/dataStructure/SequentialSearchST.h
 iostream
