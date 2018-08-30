@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/suoiccc/development/Algorithm/剑指Offer/String/Solution.h
+iostream
+-
+cstring
+-
+
+/Users/suoiccc/development/Algorithm/剑指Offer/String/main.cpp
+iostream
+-
+Solution.h
+/Users/suoiccc/development/Algorithm/剑指Offer/String/Solution.h
+
